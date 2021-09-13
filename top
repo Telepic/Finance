@@ -1,0 +1,323 @@
+[33mcommit 36c55fe6ed9b523b3dc9066bf5fa5c10a6f4a5a1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: kylepoops <TPACG>
+Date:   Fri Sep 10 10:07:28 2021 +0800
+
+    first comiit
+
+[1mdiff --git a/.classpath b/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..90f81ed[m
+[1m--- /dev/null[m
+[1m+++ b/.classpath[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry kind="src" output="target/classes" path="src/main/java">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="src" output="target/test-classes" path="src/test/java">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="test" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="test" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="output" path="target/classes"/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.project b/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a162b6f[m
+[1m--- /dev/null[m
+[1m+++ b/.project[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>Finance</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.m2e.core.maven2Builder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.m2e.core.maven2Nature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..71ac301[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=1.5[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.forbiddenReference=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.release=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=1.5[m
+[1mdiff --git a/.settings/org.eclipse.m2e.core.prefs b/.settings/org.eclipse.m2e.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f897a7f[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.m2e.core.prefs[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32mactiveProfiles=[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32mresolveWorkspaceProjects=true[m
+[32m+[m[32mversion=1[m
+[1mdiff --git a/icon.png b/icon.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..603d90d[m
+Binary files /dev/null and b/icon.png differ
+[1mdiff --git a/language/Language.txt b/language/Language.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/plugin.yml b/plugin.yml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1e87181[m
+[1m--- /dev/null[m
+[1m+++ b/plugin.yml[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32mname: Finance[m
+[32m+[m[32mmain: finance.Finance[m
+[32m+[m[32mversion: 1.0[m
+[32m+[m[32mauthor: Telepic[m
+[32m+[m[32mcommands:[m[41m [m
+[32m+[m[32m   finance:[m
+[32m+[m[32m      description: Show the default player commands.[m
+[32m+[m[32m      usage: /<command>[m
+[32m+[m[32m      permission: <plugin name>.use[m
+[32m+[m[32m      permission-message: You don't have <permission>[m
+[32m+[m[32m   fiadmin:[m
+[32m+[m[32m      description: This is finance administrator command.[m
+[32m+[m[32m      usage: /<command>[m
+[32m+[m[32m      permission: <plugin name>.admin[m
+[32m+[m[32m      permission-message: You don't have <permission>[m
+\ No newline at end of file[m
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cde5c2a[m
+[1m--- /dev/null[m
+[1m+++ b/pom.xml[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32m<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">[m
+[32m+[m[32m  <modelVersion>4.0.0</modelVersion>[m
+[32m+[m[32m  <groupId>com.telepic</groupId>[m
+[32m+[m[32m  <artifactId>Cultivation</artifactId>[m
+[32m+[m[32m  <version>1.0.0-SNAPSHOT</version>[m
+[32m+[m[32m  <repositories>[m
+[32m+[m[32m       <repository>[m
+[32m+[m[32m           <id>spigot-repo</id>[m
+[32m+[m[32m           <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>[m
+[32m+[m[32m       </repository>[m
+[32m+[m[32m       <repository>[m
+[32m+[m[41m       [m		[32m<id>jitpack.io</id>[m
+[32m+[m[41m       [m		[32m<url>https://jitpack.io</url>[m
+[32m+[m[41m   [m	[32m   </repository>[m
+[32m+[m[32m  </repositories>[m
+[32m+[m[32m  <dependencies>[m
+[32m+[m[32m       <dependency>[m
+[32m+[m[32m           <groupId>org.spigotmc</groupId>[m
+[32m+[m[32m           <artifactId>spigot-api</artifactId>[m
+[32m+[m[32m           <version>1.12-R0.1-SNAPSHOT</version>[m
+[32m+[m[32m           <type>jar</type>[m
+[32m+[m[32m           <scope>provided</scope>[m
+[32m+[m[32m       </dependency>[m
+[32m+[m[32m       <dependency>[m
+[32m+[m[41m        [m	[32m<groupId>com.github.MilkBowl</groupId>[m
+[32m+[m[41m       [m	[41m [m	[32m<artifactId>VaultAPI</artifactId>[m
+[32m+[m[41m       [m	[41m [m	[32m<version>1.7</version>[m
+[32m+[m[41m       [m	[41m [m	[32m<scope>provided</scope>[m
+[32m+[m[41m   [m	[32m   </dependency>[m
+[32m+[m[32m   </dependencies>[m
+[32m+[m[41m   [m
+[32m+[m[32m</project>[m
+[1mdiff --git a/src/main/java/finance/Finance.java b/src/main/java/finance/Finance.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..85a9693[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/finance/Finance.java[m
+[36m@@ -0,0 +1,169 @@[m
+[32m+[m[32mpackage finance;[m
+[32m+[m
+[32m+[m[32mimport org.bukkit.Server;[m
+[32m+[m[32mimport org.bukkit.plugin.RegisteredServiceProvider;[m
+[32m+[m[32mimport org.bukkit.plugin.java.JavaPlugin;[m
+[32m+[m
+[32m+[m[32mimport finance.command.AdminCommand;[m
+[32m+[m[32mimport finance.command.PlayerCommand;[m
+[32m+[m[32mimport finance.exception.Pre_PluginDefectException;[m
+[32m+[m[32mimport finance.listener.AdministratorAsyncChatListener;[m
+[32m+[m[32mimport finance.listener.MarketGUIListener;[m
+[32m+[m[32mimport finance.listener.PlayerHangOrderCreateListener;[m
+[32m+[m[32mimport finance.manager.ConfigManager;[m
+[32m+[m[32mimport finance.manager.GlobalStateManager;[m
+[32m+[m[32mimport finance.manager.HangingOrdersManager;[m
+[32m+[m[32mimport finance.manager.MarketManager;[m
+[32m+[m[32mimport net.milkbowl.vault.chat.Chat;[m
+[32m+[m[32mimport net.milkbowl.vault.economy.Economy;[m
+[32m+[m[32mimport net.milkbowl.vault.permission.Permission;[m
+[32m+[m[32m/**@author Telepic[m
+[32m+[m[32m * @category[m
+[32m+[m[32m * <b>In short, trade between players will be created to be similar to the Futures Trade.[m
+[32m+[m[32m * But there is something different between futures trade and this system.</b>[m
+[32m+[m[32m * <p>About the free trade market:[m
+[32m+[m[32m * <br>The player puts forward an order at any price (whether buying or selling)[m
+[32m+[m[32m * If it is a purchase order, the order will match the current market price. If the order price is higher than[m[41m [m
+[32m+[m[32m * the market price, all goods from this price to the market price will be traded at the buyer's price (of[m[41m [m
+[32m+[m[32m * course, the buyer's price should be calculated according to the price published by him, and the owner of[m[41m [m
+[32m+[m[32m * those sales orders still gets the price when they publish the sales order. After deducting tax expenses,[m[41m [m
+[32m+[m[32m * the price difference profit will be counted as market profit and stored in the market account. If it is[m[41m [m
+[32m+[m[32m * allowed to set up the market of the company's owner[Company Plugin], the profit can be counted as the[m[41m [m
+[32m+[m[32m * company's profit). If the price of the order is equal to or lower than the current market price, it will[m[41m [m
+[32m+[m[32m * be published in the market until the price of a sales order is lower than or equal to the price of the[m[41m [m
+[32m+[m[32m * purchase order, so that the transaction between the two is successful.[m
+[32m+[m
+[32m+[m[32m * <br>Similarly, if it is a sales order, when the price of the sales order is lower than the market price, all[m[41m [m
+[32m+[m[32m * purchase orders from the sales price to the market price will be traded. There is also a price difference[m[41m [m
+[32m+[m[32m * profit, and the logic is the same as above. When the price of the sales order is higher than or equal to[m[41m [m
+[32m+[m[32m * the market price, his order will also be published in the market until the corresponding purchase order price[m[41m [m
+[32m+[m[32m * is lower than or equal to the sales price to make the transaction between the two successful.[m
+[32m+[m[32m *[m[41m [m
+[32m+[m[32m * <br>I believe that this system and the future development of this environment will be a perfect economic plugin ecosystem.</p>[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class Finance extends JavaPlugin{[m
+[32m+[m	[32mprivate static Economy econ = null;[m
+[32m+[m[32m    private static Permission perms = null;[m
+[32m+[m[32m    private static Chat chat = null;[m
+[32m+[m[41m    [m
+[32m+[m[32m    private static Server server;[m
+[32m+[m[32m    private static MarketManager mManager;[m
+[32m+[m[32m    private static GlobalStateManager gsManager;[m
+[32m+[m[32m    private static ConfigManager cManager;[m
+[32m+[m[32m    private static HangingOrdersManager hgmanager;[m
+[32m+[m[41m    [m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic void onEnable() {[m
+[32m+[m		[32mlong startLoadingTime = System.currentTimeMillis();[m
+[32m+[m		[32mgetLogger().info("Finance²å¼þ¼ÓÔØÖÐ£¬ÇëÉÔºò.");[m
+[32m+[m[41m		[m
+[32m+[m		[32m//Register Managers[m
+[32m+[m		[32msetmManager(new MarketManager());[m
+[32m+[m		[32msetGsManager(new GlobalStateManager());[m
+[32m+[m		[32msetcManager(new ConfigManager());[m
+[32m+[m		[32msetHgmanager(new HangingOrdersManager());[m
+[32m+[m[41m		[m
+[32m+[m		[32m//Pre_Plugin[m
+[32m+[m		[32mgetLogger().info("¼ì²âÇ°ÖÃ²å¼þÊÇ·ñ°²×°.");[m
+[32m+[m		[32mif(!setupEconomy()||!setupPermissions()) {[m
+[32m+[m			[32mtry {[m
+[32m+[m				[32mthrow new Pre_PluginDefectException(this.getServer());[m
+[32m+[m			[32m} catch (Exception e) {[m
+[32m+[m				[32me.printStackTrace();[m
+[32m+[m				[32mreturn;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}else getLogger().info("Ç°ÖÃ²å¼þ¼ì²âÍê±Ï.");[m
+[32m+[m		[32m//Support_Plugin(Without developing)[m
+[32m+[m[41m			[m
+[32m+[m		[32mif(!setupCompany()) {[m
+[32m+[m			[32mgetLogger().info("¹«Ë¾²å¼þ(Company Plugin)Î´°²×°.");[m
+[32m+[m			[32mFinance.getcManager().setSetupCompany(false);[m
+[32m+[m		[32m}else Finance.getcManager().setSetupCompany(true);[m
+[32m+[m[41m		[m
+[32m+[m		[32m//...[m
+[32m+[m[41m		[m
+[32m+[m		[32m//Register Listener[m
+[32m+[m		[32mgetServer().getPluginManager().registerEvents(new MarketGUIListener(), this);[m
+[32m+[m		[32mgetServer().getPluginManager().registerEvents(new AdministratorAsyncChatListener(), this);[m
+[32m+[m		[32mgetServer().getPluginManager().registerEvents(new PlayerHangOrderCreateListener(), this);[m
+[32m+[m[41m		[m
+[32m+[m		[32m//Register Commands[m
+[32m+[m		[32mthis.getCommand("finance").setExecutor(new PlayerCommand(this));[m
+[32m+[m		[32mthis.getCommand("fiadmin").setExecutor(new AdminCommand(this));[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m		[32mlong endLoadingTime = System.currentTimeMillis() - startLoadingTime;[m
+[32m+[m		[32mgetLogger().info("Finance¼ÓÔØÍê±Ï£¬ºÄÊ±" + endLoadingTime + "ms");[m
+[32m+[m	[32m}[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic void onDisable() {[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mprivate boolean setupEconomy() {[m
+[32m+[m[32m        if (getServer().getPluginManager().getPlugin("Vault") == null) {[m
+[32m+[m[32m            return false;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);[m
+[32m+[m[32m        if (rsp == null) {[m
+[32m+[m[32m            return false;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        econ = rsp.getProvider();[m
+[32m+[m[32m        return econ != null;[m
+[32m+[m[32m    }[m
+[32m+[m[41m	[m
+[32m+[m	[32mprivate boolean setupCompany() {[m
+[32m+[m		[32mif (getServer().getPluginManager().getPlugin("Company") == null) {[m
+[32m+[m[32m            return false;[m
+[32m+[m[32m        }return true;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mprivate boolean setupPermissions() {[m
+[32m+[m[32m        RegisteredServiceProvider<Permission> rsp = getServer().getServicesManager().getRegistration(Permission.class);[m
+[32m+[m[32m        perms = rsp.getProvider();[m
+[32m+[m[32m        return perms != null;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mpublic static MarketManager getmManager() {[m
+[32m+[m		[32mreturn mManager;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic static void setmManager(MarketManager mManager) {[m
+[32m+[m		[32mFinance.mManager = mManager;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic static Economy getEconomy() {[m
+[32m+[m		[32mreturn econ;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static Permission getPerm() {[m
+[32m+[m		[32mreturn perms;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static Chat getChat() {[m
+[32m+[m		[32mreturn chat;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static Server getServ() {[m
+[32m+[m		[32mreturn server;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static void setServer(Server server) {[m
+[32m+[m		[32mFinance.server

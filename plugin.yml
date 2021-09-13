@@ -1,0 +1,15 @@
+name: Finance
+main: finance.Finance
+version: 1.0
+author: Telepic
+commands: 
+   finance:
+      description: Show the default player commands.
+      usage: /<command>
+      permission: <plugin name>.use
+      permission-message: You don't have <permission>
+   fiadmin:
+      description: This is finance administrator command.
+      usage: /<command>
+      permission: <plugin name>.admin
+      permission-message: You don't have <permission>
