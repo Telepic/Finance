@@ -21,3 +21,4 @@ Social_Welfare_System(Plan)
 ## How to add a good to market?
 ## How to configure the free market?
 ## What's will the plugin update in the future?
+Default function, configure, language, back-up and runable timer.  
